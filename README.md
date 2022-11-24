@@ -1,27 +1,25 @@
-# AngularBootstrapTemplate
+# Ansquel
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.0.
+![Screenshot](./repo_assets/ansquelboot.png)
 
-## Development server
+Ansquel is a template for Angular project, it is compose by tailwindCss configuration and principals routes.
+The project can be build in local with sh file or by docker with the docker image on the dockerHub.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+# Structure
+In the repo you find the template : `angular-template` who is the angular template code
+You have : `setup.sh` who let you build and configure your template with your choose path.
+And you will find the `Dockerfile` to build the image
 
-## Code scaffolding
+## Setup the template
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+You can start the `setup.sh` to configure locally the project.
+You will choice a project name, location and configurations.
 
-## Build
+    chmod 777 setup.sh ; ./setup.sh
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Start with Docker
 
-## Running unit tests
+To get the template with Docker you can pull the image with :
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+    docker pull croixpizza59/ansquel
+   After that you can run the container.
